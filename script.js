@@ -1,15 +1,1 @@
-const toggle = document.querySelector('.menu-toggle');
-const links = document.querySelector('.nav-links');
-if (toggle && links) {
-  toggle.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-  });
-  links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    links.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'Open navigation');
-  }));
-}
-document.getElementById('year').textContent = new Date().getFullYear();
+const toggle=document.querySelector(".menu-toggle");const nav=document.querySelector("#primary-nav");toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation")});nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle?.setAttribute("aria-expanded","false");toggle?.setAttribute("aria-label","Open navigation")}));window.addEventListener("scroll",()=>document.querySelector(".site-header")?.classList.toggle("scrolled",window.scrollY>10),{passive:true});document.querySelector("#year").textContent=new Date().getFullYear();
