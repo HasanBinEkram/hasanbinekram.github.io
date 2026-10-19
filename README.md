@@ -29,3 +29,12 @@ Update content in `index.html`; styling in `style.css`. No build tools, npm or p
 - CCNA is correctly presented as **training**, not Cisco certification.
 - This is a public site; contact email and downloadable CV are publicly accessible.
 - Fonts are requested from Google Fonts; system font fallbacks are included.
+
+
+## Version 2.0 improvements
+- Representative IT support **scenario-based case studies** (challenge → approach → goal).
+- **Interactive technical skills matrix**, with workplace/networking/operations filters.
+- Clearer career facts; no invented resolution rates, financial outcomes or certifications.
+- Mobile-friendly and keyboard-operable filter buttons.
+
+**Deployment:** Upload/replace all files in the repository root, preserving the `assets/` directory. Commit and refresh after GitHub Pages finishes deployment.
